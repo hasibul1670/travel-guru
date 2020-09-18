@@ -1,0 +1,58 @@
+body{
+  background:linear-gradient(
+        rgba(0, 0, 0, 0.7), 
+        rgba(0, 0, 0, 0.7)
+      ),
+ url(../../images/Rectangle\ 1.png);
+   
+    
+}
+.navbar-brand img{
+    filter: invert(100%);
+    -webkit-filter: invert(100%);
+ 
+}
+.navbar-brand img{
+    width: 5rem;
+}
+.no{
+   margin: 2rem;
+   
+}
+.nav-link{
+    color: white!important;
+}
+.body{
+    margin-left: 3rem;
+}
+.body>h2{
+    color: white;
+}
+.body>p{
+    color: white;
+}
+.btn a h5 {
+    
+    text-decoration: none !important;
+}
+a h5{
+    color: black;
+    text-decoration: none !important;
+}
+.card-img-top{
+    width: 100% !important;
+    height: 20rem !important ;
+    object-fit:cover!important;
+
+}
+
+.card{
+    border-radius: 20px;
+}
+.card:hover{
+    background:#C4C4C4;
+    border: 0.2rem yellow solid;
+box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+
+}

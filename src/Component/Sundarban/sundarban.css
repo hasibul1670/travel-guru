@@ -1,0 +1,21 @@
+.text{
+    color: gray;
+    font-size: 1.2rem;
+    
+}
+.form{
+    border: 2px solid gray;
+    background-color: white;
+    padding:2rem;
+    background:#C4C4C4;
+   
+box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5);
+border-radius: 20px;
+}
+.btncox{
+    width: 28.1rem;
+    height: 3.3rem
+   
+}
+
+

@@ -1,25 +1,56 @@
-import React from 'react';
+import React, { createContext, useState } from 'react';
 import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import './App.scss';
+import Home from './Component/Home/Home';
+import Cox from './Component/Cox/Cox';
+import Nomatch from './Component/Nomatch/Nomatch';
+import Sreemangal from './Component/Sreemangal/Sreemangal';
+import Sundarban from './Component/Sundarban/Sundarban';
+import Login from './Component/Login/Login';
+import Createacc from './Component/Createacc/Createacc';
+import { ThemeConsumer } from 'react-bootstrap/esm/ThemeProvider';
+import Search from './Component/Search/Search';
+import PrivateRoute from './Component/PrivateRoute/PrivateRoute';
+
+export const usercontex =createContext();
+
+
 
 function App() {
+  const [loguser,setloguser]=useState({});
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <usercontex.Provider value={[loguser,setloguser]}>
+
+
+
+
+
+<Router>
+  <Switch>
+    <Route path="/home"> <Home /> </Route>
+    <Route exact path="/"> <Home /> </Route>
+    <Route path="/sreemangal"> <Sreemangal /></Route>
+    <Route path="/sundarban"><Sundarban /> </Route>
+    <Route path="/coxbazar"> <Cox /></Route>
+    <Route path="/login"> <Login /> </Route>
+    <Route path="/create-account"> <Createacc/> </Route>
+    {/* <Route path ="/search"> <Search/> </Route> */}
+    <PrivateRoute path="/search"> <Search /> </PrivateRoute>
+    <Route path="*"><Nomatch></Nomatch> </Route>
+    <Route path="/home">  </Route>
+    <Route exact path="/"> <Home /> </Route>
+  </Switch>
+</Router>
+
+</usercontex.Provider>
+ 
   );
 }
 

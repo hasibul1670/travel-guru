@@ -1,0 +1,25 @@
+.form1{
+    width: 50rem;
+   margin-left: 25rem;
+   background-color: white;
+   padding: 4rem;
+
+
+}
+.text{
+    font-size:1.25rem;
+    }
+
+.b1{
+    border-radius: 2rem!important;
+    width: 15rem;
+
+}
+h6{
+    margin-left: 4rem;
+
+}
+.b1 img{
+    width: 2rem;
+    height: 2rem;
+}

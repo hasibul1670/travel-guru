@@ -1,0 +1,59 @@
+
+.btn p{
+    color: red;
+    
+}
+.b{
+    background:linear-gradient(
+          rgba(0, 0, 0, 0.7), 
+          rgba(0, 0, 0, 0.7)
+        ),
+   url(../../images/Rectangle\ 1.png);
+     
+      
+  }
+.s{
+
+  
+    margin-bottom: 5rem;
+}
+.hotel p{
+ 
+    margin-left: 12.5rem;
+    margin-top: -16.5rem;
+    color: gainsboro;
+
+}
+.hotel{
+    
+margin: 2rem;
+}
+  
+
+
+.hotel img{
+    width: 10rem;
+    margin-bottom: 5rem;
+    height: 12rem;
+    margin-bottom: rem;
+margin-left: 2.5rem;
+
+padding: 0.5rem;
+
+}
+
+.hotel-name{
+
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: white;
+    
+}
+.hotel-body{
+    font-weight: 500;
+    color:ghostwhite;
+}
+.price{
+    font-weight: 600;
+    color: khaki;
+}
